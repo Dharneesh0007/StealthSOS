@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Emergency Settings"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="32dp"
+        android:gravity="center"/>
+
+    <!-- 1. Secret Word -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Secret Voice Word:"
+        android:textColor="#B0BEC5"
+        android:textSize="14sp"
+        android:layout_marginBottom="6dp" />
+
+    <EditText
+        android:id="@+id/etSettingWord"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#1E1E1E"
+        android:hint="e.g., help me"
+        android:inputType="text"
+        android:paddingStart="12dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#78909C"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- 2. Hold Time -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hold Time to Cancel (Seconds):"
+        android:textColor="#B0BEC5"
+        android:textSize="14sp"
+        android:layout_marginBottom="6dp" />
+
+    <EditText
+        android:id="@+id/etSettingHoldTime"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#1E1E1E"
+        android:hint="e.g., 5"
+        android:inputType="number"
+        android:paddingStart="12dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#78909C"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- 3. Emergency Contacts -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Emergency Contacts (comma separated):"
+        android:textColor="#B0BEC5"
+        android:textSize="14sp"
+        android:layout_marginBottom="6dp" />
+
+    <EditText
+        android:id="@+id/etSettingContact"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#1E1E1E"
+        android:hint="e.g., 8667285995, 9087434571"
+        android:inputType="text"
+        android:paddingStart="12dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#78909C"
+        android:layout_marginBottom="40dp"/>
+
+    <!-- Save Button -->
+    <Button
+        android:id="@+id/btnSaveSettings"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:backgroundTint="#4CAF50"
+        android:text="SAVE SETTINGS"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+</LinearLayout>
